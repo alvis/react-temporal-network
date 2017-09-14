@@ -1,0 +1,38 @@
+{
+  "name": "react-temporal-network",
+  "version": "1.0.0",
+  "engines": {
+    "node": "~8.4.0"
+  },
+  "description": "A react component for visualising a temporal network.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf factory lib",
+    "prepare": "npm run build && mkdir lib && cp -R factory/* lib && rm -rf factory",
+    "release": "standard-version",
+    "test": "echo A test is yet to be introduced."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvis/react-temporal-network.git"
+  },
+  "keywords": [
+    "temporal",
+    "network",
+    "graph"
+  ],
+  "author": "Alvis HT Tang <alvis@hilbert.space>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvis/react-temporal-network/issues"
+  },
+  "homepage": "https://github.com/alvis/react-temporal-network#readme",
+  "devDependencies": {
+    "standard-version": "^4.2.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+  }
+}
